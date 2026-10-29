@@ -1,0 +1,6 @@
+# Every package resolves the same pinned Mastra build.
+overrides:
+  '@mastra/core': '0.0.0-om-lifecycle-20261008200611'
+  '@mastra/memory': '0.0.0-om-lifecycle-20261008200611'
+allowBuilds:
+  esbuild: true

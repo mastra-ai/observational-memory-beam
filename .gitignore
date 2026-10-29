@@ -1,0 +1,14 @@
+node_modules/
+dist/
+*.tsbuildinfo
+
+# secrets
+.env
+.env.local
+
+# the dataset and everything a run writes
+/data/
+/snapshots/
+/answers/
+/judgements/
+om-debug.log

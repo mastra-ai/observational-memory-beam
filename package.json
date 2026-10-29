@@ -1,0 +1,33 @@
+{
+  "name": "observational-memory-beam",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Run Mastra's Observational Memory on the BEAM long-term memory benchmark.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "fetch-data": "tsx scripts/fetch-dataset.ts",
+    "ingest": "tsx scripts/ingest.ts",
+    "answer": "tsx scripts/answer.ts",
+    "judge": "tsx scripts/judge.ts",
+    "report": "tsx scripts/report.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@ai-sdk/provider": "4.0.7",
+    "@mastra/core": "0.0.0-om-lifecycle-20261008200611",
+    "@mastra/memory": "0.0.0-om-lifecycle-20261008200611",
+    "ai": "7.0.71",
+    "imvectordb": "^0.0.6"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.13",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}
